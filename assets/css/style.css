@@ -19,6 +19,7 @@ div.wrapper{
 }
 div.wrapper>section{
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 ul.my_style_ul{
   list-style: none;
