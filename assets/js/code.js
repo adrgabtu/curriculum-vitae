@@ -7,12 +7,12 @@ var pre_address = document.getElementById("pre_address");
 var phone = document.getElementById("phone");
 var email = document.getElementById("email");
 var img = document.querySelector("img");
-var navbar_brand = document.querySelector('a','navbar-brand');
-var title = document.querySelector('title');
+var navbar_brand = document.querySelector("a", "navbar-brand");
+var title = document.querySelector("title");
 
-// CUANDO EL DOCUMENTO INICIA, SE CARGA CONTENIDO DE API
 $(document).ready(function () {
-
+  
+  // CUANDO EL DOCUMENTO INICIA, SE CARGA CONTENIDO DE API
   $.ajax({
     url: "https://randomuser.me/api/",
     dataType: "json",
@@ -22,9 +22,10 @@ $(document).ready(function () {
       results.forEach((result) => {
         img.src = result.picture.large;
         full_name.innerText = result.name.first + ", " + result.name.last;
-        pre_name.innerText =  result.name.first + " " + result.name.last;
-        navbar_brand.innerText =  'CV | '+result.name.first + " " + result.name.last;
-        title.innerText =  'CV | '+result.name.first + " " + result.name.last;
+        pre_name.innerText = result.name.first + " " + result.name.last;
+        navbar_brand.innerText =
+          "CV | " + result.name.first + " " + result.name.last;
+        title.innerText = "CV | " + result.name.first + " " + result.name.last;
         email.innerText = result.email;
         address.innerText =
           result.location.street.name +
@@ -49,10 +50,10 @@ $(document).ready(function () {
       });
 
       // Cuando se realiza cick encima recarga la web con un nuevo usuario
-      navbar_brand.addEventListener('click', function(e){
+      navbar_brand.addEventListener("click", function (e) {
         e.preventDefault;
         window.location.reload();
-      })
+      });
     },
   });
 
@@ -70,4 +71,25 @@ $(document).ready(function () {
     return (age.innerText =
       new Date(date).toLocaleDateString("es-ES") + " | " + edad + " años");
   }
+
+
+  // Boton ir al tope
+  $(".go-top").hide();
+
+  $(".go-top").click(function () {
+    $("body, html").animate(
+      {
+        scrollTop: "0px",
+      },
+      300
+    );
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $(".go-top").slideDown(300);
+    } else {
+      $(".go-top").slideUp(300);
+    }
+  });
 });
