@@ -13,38 +13,47 @@ body {
   background-image: url(../img/pattern-1.jpg);
 }
 
-div.wrapper{
+div.wrapper {
   padding-top: 100px;
-  font-size:12px;
+  font-size: 12px;
 }
-div.wrapper>section{
+div.wrapper > section {
   padding-top: 45px;
   padding-bottom: 45px;
 }
-ul.my_style_ul{
+ul.my_style_ul {
   list-style: none;
 }
-ul.my_style_ul>li{
-font-size: 16px;
+
+ul.my_style_ul > li {
+  font-size: 14px;
 }
-ul.my_style_ul>li>i{
-font-size: 20px;
-color: blue;
-border: solid blue;
-padding: 10px;
-margin-bottom:4px;
-border-radius: 45%;
+ul.my_style_ul > li > i {
+  font-size: 20px;
+  color: rgb(58, 58, 248);
+  border: solid rgb(58, 58, 248);
+  padding: 10px;
+  margin-bottom: 4px;
+  border-radius: 45%;
 }
 
-.go-top{
-  display:none;
-	padding:20px;
-	background:rgb(58, 58, 248);
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
+#experience-info {
+  justify-content: center;
+}
+
+#experience-info p{
+  font-size: 14px;
+}
+
+.go-top {
+  display: none;
+  padding: 20px;
+  background: rgb(58, 58, 248);
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   border-radius: 50%;
 }

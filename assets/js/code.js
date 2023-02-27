@@ -10,8 +10,20 @@ var img = document.querySelector("img");
 var navbar_brand = document.querySelector("a", "navbar-brand");
 var title = document.querySelector("title");
 
+var div_elements = document.getElementById("exp_list");
+
+const cms = document.getElementById("cms");
+const framework = document.getElementById("framework");
+const dbs = document.getElementById("dbs");
+const dbs_no_sql = document.getElementById("dbs-no-sql");
+
 $(document).ready(function () {
-  
+  cms.style.display = "none";
+  framework.style.display = "none";
+  dbs.style.display = "none";
+  dbs_no_sql.style.display = "none";
+
+  mostrarOcultar();
   // CUANDO EL DOCUMENTO INICIA, SE CARGA CONTENIDO DE API
   $.ajax({
     url: "https://randomuser.me/api/",
@@ -72,7 +84,6 @@ $(document).ready(function () {
       new Date(date).toLocaleDateString("es-ES") + " | " + edad + " años");
   }
 
-
   // Boton ir al tope
   $(".go-top").hide();
 
@@ -92,4 +103,39 @@ $(document).ready(function () {
       $(".go-top").slideUp(300);
     }
   });
+
+  function mostrarOcultar() {
+    document.querySelectorAll("li.list-item").forEach((element) => {
+      element.addEventListener("click", function (e) {
+        e.preventDefault();
+        let elm_list = e.target.dataset.content;
+
+        if(elm_list == "cms"){
+          cms.style.display = "block";
+        }else{
+          cms.style.display = "none";
+        }
+
+        if(elm_list == "framework"){
+          framework.style.display = "block";
+        }else{
+          framework.style.display = "none";
+        }        
+
+        if (elm_list == "dbs") {
+          dbs.style.display = "block";
+        } else {
+          dbs.style.display = "none";
+        }
+
+        if (elm_list == "dbs-no-sql") {
+          dbs_no_sql.style.display = "block";
+        } else {
+          dbs_no_sql.style.display = "none";
+        }
+
+      });
+    });
+  }
+  
 });
