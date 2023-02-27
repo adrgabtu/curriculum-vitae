@@ -19,7 +19,8 @@
 <body>
 
   <!-- Inicio de navegador bootstrap con estilos bootstrap-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+    style="background-image: url(./assets/img/pattern-1.jpg);background-color: rgba(16, 16, 168, 0.781);">
 
     <!-- contenedor principal para los items de menu -->
     <div class="container">
@@ -62,246 +63,230 @@
 
   <main class="container">
 
-    <div class="wrapper">
+    <div class="card card-page">
+      <div class="card-body">
+        <div class="section" id="personal-data">
+          <div class="row">
 
-      <section id="personal-data">
-        <div class="row">
-          <div class="col-sm-12 col-lg-6 mb-5">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title">
-                  <h3>Datos Personales</h3>
-                  <hr>
-                  <div class="row">
-
-                    <div class="col-sm-12 col-lg-4 text-center">
-                      <img class="rounded mb-3" src="" alt="avatar">
-                    </div>
-                    <div class="col-sm-12 col-lg-8">
-                      <p class="text-black" style="font-size:15px;">
-                        <b class="mr-3">
-                          <span id="full_name"></span>
-                        </b>
-                      </p>
-                      <p class="text-muted">Fecha de nacimiento:
-                        <b class="mr-3">
-                          <span id="age"></span>
-                        </b>
-                      </p>
-                      <p class="text-muted">Correo electrónico:
-                        <b class="mr-3">
-                          <span id="email"></span>
-                        </b>
-                      </p>
-                      <p class="text-muted">Domicilio:
-                        <b class="mr-3">
-                          <span id="address"></span>
-                        </b>
-                      </p>
-                      <p class="text-muted">Teléfono | Celular:
-                        <b class="mr-3">
-                          <span id="phone"></span>
-                        </b>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-6 mb-5">
-            <div id="main_container">
-
-              <div class="card">
-                <div class="card-body">
-
-                  <div class="card-title">
-                    <h3>Presentación</h3>
-                    <hr>
-                  </div>
-
-                  <p class="text-muted">
-                    <em>Hola Soy <b id="pre_name"></b> de <b id="pre_address"></b>, en estos
-                      momentos estoy comenzando mi primer emprendimiento de diseño y desarrollo profesional para
-                      pequeñas y grandes empresas.
-                    </em>
-                  </p>
-
-                  <p class="text-muted">
-                    <em>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam harum voluptatibus ratione modi.
-                      Delectus hic animi beatae ullam, saepe cupiditate. Amet dolore voluptates excepturi dolor
-                      expedita
-                      accusamus perferendis nihil non!
-                    </em>
-                  </p>
-
-                  <p class="text-muted">
-                    <em>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit saepe obcaecati porro
-                      facere? Magnam, dolores ab! Dignissimos ducimus, exercitationem eum repellendus blanditiis
-                      molestiae quod magnam atque eos. Tempora, obcaecati.
-                    </em>
-                  </p>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <h3>Experiencia</h3>
+            <div class="col-sm-12 col-lg-6 mb-5">
+              <h3>Datos Personales</h3>
               <hr>
               <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                  <ul id="exp_list" class="my_style_ul">
-                    <li class="list-item">
-                      <i class="fas fa-briefcase"></i>
-                      <a href="#" data-content="cms">
-                        Diseño Web en CMS Joomla, Drupal, Wordpress y Webflow
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <i class="fas fa-briefcase"></i>
-                      <a href="#" data-content="framework">
-                        Desarrollo Web en Frameworks Laravel y Vuejs
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <i class="fas fa-briefcase"></i>
-                      <a href="#" data-content="dbs">
-                        Desarrollo Base de datos Relacionales MySql /SQL
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <i class="fas fa-briefcase"></i>
-                      <a href="#" data-content="dbs-no-sql">
-                        Desarrollo Base de datos No Relacionales MongoDB
-                      </a>
-                    </li>
-                  </ul>
+
+                <div class="col-sm-12 col-lg-4 text-center">
+                  <img class="rounded mb-3" src="" alt="avatar">
                 </div>
-                <div class="col-lg-6 col-sm-12" id="experience-info">
-                  <div id="cms">
-                    <h6 class="display-6">¿Que es un cms?</h6>
-                    <p>
-                      CMS son las siglas de Content Management System, en español Sistema de Gestión de
-                      Contenidos. En síntesis, un CMS te permite crear, organizar, publicar y eliminar contenidos de tu
-                      sitio web. Pero, por otro lado, en este artículo entenderás cómo y por qué utilizar un CMS en tu
-                      estrategia digital.
-                    </p>
-                  </div>
-                  <div id="framework">
-                    <h6 class="display-6">¿Que es un Framework?</h6>
-                    <p>
-                      Un framework es un entorno o marco de trabajo, un conjunto de prácticas, conceptos y criterios a
-                      seguir estandarizados. Siguiendo unas reglas, el framework nos obliga a utilizar buenas prácticas
-                      para nuestro código. Por otro lado, los frameworks también nos proporcionan una serie de
-                      herramientas ya desarrolladas.
-                    </p>
-                  </div>
-                  <div id="dbs">
-                    <h6 class="display-6">¿Que es una Base de Datos?</h6>
-                    <p>
-                      Una base de datos es una herramienta que recopila datos, los organiza y los relaciona para que se
-                      pueda hacer una rápida búsqueda y recuperar con ayuda de un ordenador. Hoy en día, las bases de
-                      datos también sirven para desarrollar análisis. Las bases de datos más modernas tienen motores
-                      específicos para sacar informes de datos complejos.
-                    </p>
-                  </div>
-                  <div id="dbs-no-sql">
-                    <h6 class="display-6">¿Que es una Base de Datos no relacional?</h6>
-                    <p>
-                      Una base de datos no relacional es aquella que no usa el esquema tabular de filas y columnas que
-                      se
-                      encuentra en la mayoría de los sistemas de base de datos más tradicionales.
-                    </p>
-                  </div>
+                <div class="col-sm-12 col-lg-8">
+                  <p style="font-size:15px;">
+                    <b class="mr-3">
+                      <span id="full_name"></span>
+                    </b>
+                  </p>
+                  <p>Fecha de nacimiento:
+                    <b class="mr-3">
+                      <span id="age"></span>
+                    </b>
+                  </p>
+                  <p>Correo electrónico:
+                    <b class="mr-3">
+                      <span id="email"></span>
+                    </b>
+                  </p>
+                  <p>Domicilio:
+                    <b class="mr-3">
+                      <span id="address"></span>
+                    </b>
+                  </p>
+                  <p>Teléfono | Celular:
+                    <b class="mr-3">
+                      <span id="phone"></span>
+                    </b>
+                  </p>
                 </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 mb-5">
+              <div id="main_container">
+                <h3>Presentación</h3>
+                <hr>
+                <p>
+                  <em>Hola Soy <b id="pre_name"></b> de <b id="pre_address"></b>, en estos
+                    momentos estoy comenzando mi primer emprendimiento de diseño y desarrollo profesional para
+                    pequeñas y grandes empresas.
+                  </em>
+                </p>
+
+                <p>
+                  <em>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam harum voluptatibus ratione modi.
+                    Delectus hic animi beatae ullam, saepe cupiditate. Amet dolore voluptates excepturi dolor
+                    expedita
+                    accusamus perferendis nihil non!
+                  </em>
+                </p>
+
+                <p>
+                  <em>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit saepe obcaecati porro
+                    facere? Magnam, dolores ab! Dignissimos ducimus, exercitationem eum repellendus blanditiis
+                    molestiae quod magnam atque eos. Tempora, obcaecati.
+                  </em>
+                </p>
+
+
               </div>
             </div>
 
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section id="skills">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <h3>Habilidades</h3>
-              <ul class="my_style_ul">
-                <li>
-                  <i class="fas fa-gauge"></i>
-                  Excelente comunicación en equipo.
+    <div class="card card-page">
+      <div class="card-body">
+        <div class="section" id="experience">
+          <h3>Experiencia</h3>
+          <hr>
+          <div class="row">
+
+            <div class="col-lg-6 col-sm-12">
+              <ul id="exp_list">
+                <li class="list-item">
+                  <i class="fas fa-briefcase"></i>
+                  <a href="#" data-content="cms">
+                    Diseño Web en CMS Joomla, Drupal, Wordpress y Webflow
+                  </a>
                 </li>
-                <li>
-                  <i class="fas fa-gauge"></i>
-                  Adaptación a cambios durante el proceso de desarrollo.
+                <li class="list-item">
+                  <i class="fas fa-briefcase"></i>
+                  <a href="#" data-content="framework">
+                    Desarrollo Web en Frameworks Laravel y Vuejs
+                  </a>
                 </li>
-                <li>
-                  <i class="fas fa-gauge"></i>
-                  Facil adaptación a diferentes frameworks y lenguajes de programación.
+                <li class="list-item">
+                  <i class="fas fa-briefcase"></i>
+                  <a href="#" data-content="dbs">
+                    Desarrollo Base de datos Relacionales MySql /SQL
+                  </a>
                 </li>
-                <li>
-                  <i class="fas fa-gauge"></i>
-                  Rapidez en detección y solución de Bugs.
+                <li class="list-item">
+                  <i class="fas fa-briefcase"></i>
+                  <a href="#" data-content="dbs-no-sql">
+                    Desarrollo Base de datos No Relacionales MongoDB
+                  </a>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="knowledge">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <h3>Conocimientos</h3>
-              <ul class="my_style_ul">
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  HTML, CSS, Javscript, C#
-                </li>
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  Desarrollo Web PHP, Laravel, Vuejs, VanillaJS.
-                </li>
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  Diseño y Desarrollo de Base de datos MySql, Sql, MongoDB y Sqlite.
-                </li>
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  Metodologias Agiles Scrum y Kanban.
-                </li>
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  Manejo de Controladores de versiones GitHub, BitBucket y Gitlab.
-                </li>
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  Alojamiento Web, VPS, nginx, apache, Cpanel.
-                </li>
-                <li>
-                  <i class="fas fa-rocket"></i>
-                  Sistemas operativos Ubuntu / linux / Windows.
-                </li>
-              </ul>
-
+            <div class="col-lg-6 col-sm-12" id="experience-info">
+              <div id="cms">
+                <h6 class="display-6">¿Que es un cms?</h6>
+                <p>
+                  CMS son las siglas de Content Management System, en español Sistema de Gestión de
+                  Contenidos. En síntesis, un CMS te permite crear, organizar, publicar y eliminar contenidos de tu
+                  sitio web. Pero, por otro lado, en este artículo entenderás cómo y por qué utilizar un CMS en tu
+                  estrategia digital.
+                </p>
+              </div>
+              <div id="framework">
+                <h6 class="display-6">¿Que es un Framework?</h6>
+                <p>
+                  Un framework es un entorno o marco de trabajo, un conjunto de prácticas, conceptos y criterios a
+                  seguir estandarizados. Siguiendo unas reglas, el framework nos obliga a utilizar buenas prácticas
+                  para nuestro código. Por otro lado, los frameworks también nos proporcionan una serie de
+                  herramientas ya desarrolladas.
+                </p>
+              </div>
+              <div id="dbs">
+                <h6 class="display-6">¿Que es una Base de Datos?</h6>
+                <p>
+                  Una base de datos es una herramienta que recopila datos, los organiza y los relaciona para que se
+                  pueda hacer una rápida búsqueda y recuperar con ayuda de un ordenador. Hoy en día, las bases de
+                  datos también sirven para desarrollar análisis. Las bases de datos más modernas tienen motores
+                  específicos para sacar informes de datos complejos.
+                </p>
+              </div>
+              <div id="dbs-no-sql">
+                <h6 class="display-6">¿Que es una Base de Datos no relacional?</h6>
+                <p>
+                  Una base de datos no relacional es aquella que no usa el esquema tabular de filas y columnas que
+                  se
+                  encuentra en la mayoría de los sistemas de base de datos más tradicionales.
+                </p>
+              </div>
             </div>
+
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
+    <div class="card card-page">
+      <div class="card-body">
+        <div class="section" id="skills">
+          <h3>Habilidades</h3>
+
+          <ul>
+            <li>
+              <i class="fas fa-gauge"></i>
+              Excelente comunicación en equipo.
+            </li>
+            <li>
+              <i class="fas fa-gauge"></i>
+              Adaptación a cambios durante el proceso de desarrollo.
+            </li>
+            <li>
+              <i class="fas fa-gauge"></i>
+              Facil adaptación a diferentes frameworks y lenguajes de programación.
+            </li>
+            <li>
+              <i class="fas fa-gauge"></i>
+              Rapidez en detección y solución de Bugs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-page">
+      <div class="card-body">
+        <div class="section" id="knowledge">
+          <h3>Conocimientos</h3>
+
+          <ul>
+            <li>
+              <i class="fas fa-rocket"></i>
+              HTML, CSS, Javscript, C#
+            </li>
+            <li>
+              <i class="fas fa-rocket"></i>
+              Desarrollo Web PHP, Laravel, Vuejs, VanillaJS.
+            </li>
+            <li>
+              <i class="fas fa-rocket"></i>
+              Diseño y Desarrollo de Base de datos MySql, Sql, MongoDB y Sqlite.
+            </li>
+            <li>
+              <i class="fas fa-rocket"></i>
+              Metodologias Agiles Scrum y Kanban.
+            </li>
+            <li>
+              <i class="fas fa-rocket"></i>
+              Manejo de Controladores de versiones GitHub, BitBucket y Gitlab.
+            </li>
+            <li>
+              <i class="fas fa-rocket"></i>
+              Alojamiento Web, VPS, nginx, apache, Cpanel.
+            </li>
+            <li>
+              <i class="fas fa-rocket"></i>
+              Sistemas operativos Ubuntu / linux / Windows.
+            </li>
+          </ul>
+          
+        </div>
+      </div>
     </div>
 
     <!-- Botón de ir arriba -->
@@ -311,6 +296,18 @@
 
   </main>
 
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <div class="social mb-3">
+          <a class="mx-3 text-primary" href="#facebook"><i class="fab fa-facebook fa-2x"></i></a>
+          <a class="mx-3 text-primary" href="#instagram"><i class="fab fa-instagram fa-2x"></i></a>
+          <a class="mx-3 text-primary" href="#linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <i class="fa fa-copyright" aria-hidden="true"></i> Curriculum Vitae - Adrian Tula
+      </div>
+    </div>
+  </footer>
 </body>
 <!-- Fin de etiqueta cuerpo de html -->
 

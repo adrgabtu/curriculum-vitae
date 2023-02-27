@@ -4,37 +4,51 @@ Styles by: Hector Gabriel Adrián Tula
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html,
 body {
-  font-family: "Inter", sans-serif;
   height: 100%;
   font-size: 14px;
+  font-family: "Inter", sans-serif;
   padding: 0px;
   margin: 0px;
-  /* background: #0436fe; */
   background-image: url(../img/pattern-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-div.wrapper {
-  padding-top: 100px;
+div.card-page {
+  margin-top: 100px;
+  margin-bottom: 100px;
   font-size: 12px;
+  background-color: rgba(6, 6, 80, 0.644);
+  color:white;
 }
-div.wrapper > section {
-  padding-top: 45px;
-  padding-bottom: 45px;
+
+div.card-page > div.section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-ul.my_style_ul {
+
+ul {
   list-style: none;
 }
 
-ul.my_style_ul > li {
+ul > li {
   font-size: 14px;
 }
-ul.my_style_ul > li > i {
+
+ul > li > i {
   font-size: 20px;
   color: rgb(58, 58, 248);
-  border: solid rgb(58, 58, 248);
   padding: 10px;
   margin-bottom: 4px;
-  border-radius: 45%;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+ul > li > a:hover {
+  text-decoration: none;
+  color: rgb(93, 93, 241);
 }
 
 #experience-info {
@@ -56,4 +70,25 @@ ul.my_style_ul > li > i {
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
+}
+
+footer{
+  width: 100%;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (min-width: 992px) {
+  body {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {
+  body {
+    width: 100%;
+  }
 }
